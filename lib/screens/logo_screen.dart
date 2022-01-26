@@ -12,7 +12,7 @@ class _LogoScreenState extends State<LogoScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 5),
+    Timer(const Duration(seconds: 3),
         () => Navigator.pushNamed(context, '/auth'));
   }
 
