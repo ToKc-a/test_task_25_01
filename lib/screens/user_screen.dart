@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
-import 'package:test_task_25_01/appBar.dart';
-import 'package:test_task_25_01/photo_carousel.dart';
-import 'package:test_task_25_01/user.dart';
-import 'package:test_task_25_01/user_controller.dart';
+import 'package:test_task_25_01/utils/appBar.dart';
+import 'package:test_task_25_01/utils/photo_carousel.dart';
+import 'package:test_task_25_01/models/user.dart';
+import 'package:test_task_25_01/controllers/user_controller.dart';
 
 class UserScreen extends StatefulWidget {
   const UserScreen({Key? key}) : super(key: key);

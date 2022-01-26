@@ -1,5 +1,5 @@
-import 'package:test_task_25_01/repository.dart';
-import 'package:test_task_25_01/photo.dart';
+import 'package:test_task_25_01/utils/repository.dart';
+import 'package:test_task_25_01/models/photo.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
 class PhotoController extends ControllerMVC {

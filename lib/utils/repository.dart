@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:test_task_25_01/photo.dart';
-import 'package:test_task_25_01/post.dart';
-import 'package:test_task_25_01/user.dart';
+import 'package:test_task_25_01/models/photo.dart';
+import 'package:test_task_25_01/models/post.dart';
+import 'package:test_task_25_01/models/user.dart';
 
 const String server = 'https://jsonplaceholder.typicode.com';
 

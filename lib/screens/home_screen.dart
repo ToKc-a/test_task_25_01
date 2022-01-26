@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
-import 'package:test_task_25_01/appBar.dart';
-import 'package:test_task_25_01/post.dart';
-import 'package:test_task_25_01/post_controller.dart';
+import 'package:test_task_25_01/utils/appBar.dart';
+import 'package:test_task_25_01/models/post.dart';
+import 'package:test_task_25_01/controllers/post_controller.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

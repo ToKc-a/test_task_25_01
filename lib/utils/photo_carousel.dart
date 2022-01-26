@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
-import 'package:test_task_25_01/photo.dart';
-import 'package:test_task_25_01/photo_controller.dart';
+import 'package:test_task_25_01/models/photo.dart';
+import 'package:test_task_25_01/controllers/photo_controller.dart';
 
 class PhotoCarousel extends StatefulWidget {
   const PhotoCarousel({Key? key}) : super(key: key);
@@ -51,14 +51,14 @@ class _PhotoCarouselState extends StateMVC {
         child: SizedBox(
           height: 400,
           width: 400,
-          child: ListView.builder( //заменить на GridView
+          child: GridView.builder(
             scrollDirection: Axis.horizontal,
-            // gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            //   crossAxisCount: 2
-            // ),
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2
+            ),
               itemCount: photoList.photos.length,
               itemBuilder: (context, index) {
-                return Image.network(photoList.photos[index].url);
+                return Image.network(photoList.photos[index].thumbnailUrl);
               }),
         ),
       );
